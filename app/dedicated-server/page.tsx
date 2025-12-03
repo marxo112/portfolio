@@ -71,30 +71,12 @@ export default function StatusTerminal() {
           marco@portfolio:~$ <span className="text-neutral-200">systemctl status servers</span>
         </p>
         <p className="mt-2 text-neutral-300">
-          - Webserver (Keyhelp Panel)<br />
-          STATUS: {status.webserver.online 
-          ? <span className="text-green-400">active (running)</span> 
-          : <span className="text-red-400">inactive (down)</span>}<br /><br />
+          - Webserver<br />
           - Nextcloud<br />
-          STATUS: {status.nextcloud.online
-          ? <span className="text-green-400">active (running)</span> 
-          : <span className="text-red-400">inactive (down)</span>}<br /><br />
           - Vaultwarden (Passwortmanager)<br />
-          STATUS: {status.vaultwarden.online
-          ? <span className="text-green-400">active (running)</span> 
-          : <span className="text-red-400">inactive (down)</span>}<br /><br />
           - Proxy (Nginx)<br />
-          STATUS: {status.proxy.online
-          ? <span className="text-green-400">active (running)</span> 
-          : <span className="text-red-400">inactive (down)</span>}<br /><br />
           - Windows VM<br />
-          STATUS: {status.windows_vm.online
-          ? <span className="text-green-400">active (running)</span> 
-          : <span className="text-red-400">inactive (down)</span>}<br /><br />
-          - Docker Container (verschiedene Dienste)<br />
-          STATUS: {status.docker.online
-          ? <span className="text-green-400">active (running)</span> 
-          : <span className="text-red-400">inactive (down)</span>}<br /><br />
+          - Docker Container (verschiedene Dienste)<br /
         </p>
       </section>
 
