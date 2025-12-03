@@ -21,7 +21,7 @@ export default function StatusTerminal() {
         }
         fetchStatus();
 
-        const interval = setInterval(fetchStatus, 2000); // Aktualisiere alle 2 Sekunden
+        const interval = setInterval(fetchStatus, 2000);
         return () => clearInterval(interval);
     }, []);
 
@@ -38,7 +38,6 @@ export default function StatusTerminal() {
                 </p>
             </section>
 
-            {/* Terminal sofort rendern */}
             <section className="mt-12 w-full max-w-3xl bg-black border border-neutral-800 rounded-lg p-6 shadow-xl shadow-black/40 font-mono">
                 <p className="text-teal-400">
                 marco@portfolio:~$ <span className="text-neutral-200">systemctl status servers</span>
